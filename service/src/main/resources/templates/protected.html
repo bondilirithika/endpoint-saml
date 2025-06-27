@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Protected Route - Flutto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); text-align: center; max-width: 500px; }
+        h1 { color: #28a745; margin-bottom: 1rem; }
+        p { color: #666; margin-bottom: 2rem; }
+        .btn { display: inline-block; padding: 12px 24px; background: #007bff; color: white; text-decoration: none; border-radius: 8px; margin: 0.5rem; }
+        .btn:hover { background: #0056b3; }
+        .success-icon { font-size: 3rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">🛡️</div>
+        <h1>Protected Route Access</h1>
+        <p>Congratulations, <strong th:text="${username}">User</strong>!</p>
+        <p>Your JWT token is working correctly. You have access to protected routes.</p>
+        <a href="/dashboard" class="btn">← Back to Dashboard</a>
+    </div>
+</body>
+</html>

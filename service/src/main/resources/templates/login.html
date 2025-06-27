@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login - Flutto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .login-container { background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); text-align: center; max-width: 450px; }
+        h2 { color: #333; margin-bottom: 1rem; font-size: 2rem; }
+        p { color: #666; margin-bottom: 2rem; }
+        .google-btn { display: inline-flex; align-items: center; padding: 12px 24px; background: #4285f4; color: white; text-decoration: none; border-radius: 8px; font-size: 1rem; transition: all 0.3s ease; }
+        .google-btn:hover { background: #3367d6; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .google-icon { margin-right: 10px; font-size: 1.2rem; }
+        .back-link { display: block; margin-top: 2rem; color: #666; text-decoration: none; }
+        .back-link:hover { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>🔐 Login to Flutto</h2>
+        <p>Secure authentication with Google SAML</p>
+        <a href="/saml2/authenticate/google" class="google-btn">
+            <span class="google-icon">🔍</span>
+            Login with Google SAML
+        </a>
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
